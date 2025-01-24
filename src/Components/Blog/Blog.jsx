@@ -11,19 +11,19 @@ const Blog = ({blog, handleAddToBookmark, handleMarkAsRead}) => {
                 <div className='flex'>
                     <img src={author_img} alt="" className='w-14'/>
                     <div className='ml-6'>
-                        <h3 className='text-2xl'>{author}</h3>
-                        <p>{posted_date}</p>
+                        <h3 className='text-2xl font-semibold'>{author}</h3>
+                        <p className='text-sm text-gray-400 font-semibold'>{posted_date}</p>
                     </div>
                 </div>
                 <div>
-                    <span className=''>{reading_time} min read</span>
+                    <span className='text-lg'>{reading_time} min read</span>
                     <button onClick={()=>handleAddToBookmark(blog)}
                     className='ml-1 text-lg '><PiBookmarkSimpleBold />
                     </button>
                 </div>
             </div>
-            <h1 className='text-4xl'>Blogs: {title}</h1>
-            <p>{
+            <h1 className='text-4xl font-bold'>{title}</h1>
+            <p className='text-base text-gray-500'>{
                 hashtags.map((hash, idx)=> <span key={idx} > {hash}</span>)}</p>
             <button className='text-purple-800 underline font-bold' onClick={()=> handleMarkAsRead(id,reading_time)}>Mark as read</button>
         </div>
