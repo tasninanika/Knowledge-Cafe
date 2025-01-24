@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { PiBookmarkSimpleBold } from "react-icons/pi";
 
 
-const Blog = ({blog}) => {
+const Blog = ({blog, handleAddToBookmark}) => {
     const {title,cover,author, author_img, posted_date, reading_time, hashtags} = blog;
     return (
         <div className='mb-20'>
@@ -17,7 +17,8 @@ const Blog = ({blog}) => {
                 </div>
                 <div>
                     <span className=''>{reading_time} min read</span>
-                    <button className='ml-1 text-lg '><PiBookmarkSimpleBold />
+                    <button onClick={()=>handleAddToBookmark()}
+                    className='ml-1 text-lg '><PiBookmarkSimpleBold />
                     </button>
                 </div>
             </div>
