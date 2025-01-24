@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { PiBookmarkSimpleBold } from "react-icons/pi";
 
 
 const Blog = ({blog}) => {
@@ -15,7 +16,9 @@ const Blog = ({blog}) => {
                     </div>
                 </div>
                 <div>
-                    <span>{reading_time} min read</span>
+                    <span className=''>{reading_time} min read</span>
+                    <button className='ml-1 text-lg '><PiBookmarkSimpleBold />
+                    </button>
                 </div>
             </div>
             <h1 className='text-4xl'>Blogs: {title}</h1>
