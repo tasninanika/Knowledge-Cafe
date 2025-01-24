@@ -17,7 +17,7 @@ function App() {
       <Header></Header>
       <main className="md:flex max-w-7xl mx-auto">
         <Blogs handleAddToBookmark={handleAddToBookmark}></Blogs>
-        <Bookmarks></Bookmarks>
+        <Bookmarks bookmarks={bookmarks}></Bookmarks>
       </main>
     </>
   )
