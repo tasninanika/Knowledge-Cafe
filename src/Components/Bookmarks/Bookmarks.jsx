@@ -7,4 +7,8 @@ const Bookmarks = ({bookmarks}) => {
     );
 };
 
+Bookmarks.propTypes = {
+    bookmarks: PropTypes.array.isRequired
+}
+
 export default Bookmarks;
