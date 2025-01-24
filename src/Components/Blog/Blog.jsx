@@ -2,9 +2,11 @@ import PropTypes from 'prop-types';
 
 
 const Blog = ({blog}) => {
-    console.log(blog);
+    const {title,cover} = blog;
     return (
         <div>
+            <img src={cover} alt={`Cover picture of the title${title}`} />
+            <h1 className='text-4xl'>Blogs: {title}</h1>
         </div>
     );
 };
