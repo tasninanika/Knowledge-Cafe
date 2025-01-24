@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import Blog from "../Blog/Blog";
 
 const Blogs = () => {
 
@@ -13,7 +14,8 @@ const Blogs = () => {
 
     return (
         <div>
-            
+
+            <Blog></Blog>
         </div>
     );
 };
