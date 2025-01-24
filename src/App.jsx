@@ -1,9 +1,10 @@
+import Header from "./Components/Header/Header"
 
 function App() {
 
   return (
     <>
-      <h2 className="text-2xl">Knowledge Cafe</h2>
+      <Header></Header>
     </>
   )
 }
