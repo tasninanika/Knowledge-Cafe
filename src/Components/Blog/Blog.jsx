@@ -18,7 +18,7 @@ const Blog = ({blog, handleAddToBookmark, handleMarkAsRead}) => {
                 <div>
                     <span className='text-lg'>{reading_time} min read</span>
                     <button onClick={()=>handleAddToBookmark(blog)}
-                    className='ml-1 text-lg '><PiBookmarkSimpleBold />
+                    className='ml-1 text-lg cursor-pointer'><PiBookmarkSimpleBold />
                     </button>
                 </div>
             </div>
